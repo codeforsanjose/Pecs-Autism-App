@@ -15,6 +15,6 @@ Children on the Autism spectrum currently use a Picture Exchange Communication S
 
 It is in our best interest to be mindful when we are making this app. UI design will be extremely important in this case due to children having sensory difficulties. One study noted that ease of personalization was determinated to be a key factor in developing successful applications for people on the spectrum.
 
-## Contributors
+## Future Contributors
 
-We hope as many people contribute as possible. Thank you in advance for taking time out of your day to help with this project. You are making a huge difference in the lives of children on the Autism spectrum. 
+Feel free to contribute to this project. Thank you in advance for taking time out of your day to help with this project. You are making a huge difference in the lives of children on the Autism spectrum. 
