@@ -9,4 +9,6 @@ Children on the Autism spectrum currently use a Picture Exchange Communication S
 
 ![](/example_pecs.jpg)
 
+## User Interface
 
+"While good UI design is important for any software development effort, it’s even more important when designing for individuals on the autism spectrum."
