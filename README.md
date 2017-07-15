@@ -13,7 +13,4 @@ Children on the Autism spectrum currently use a Picture Exchange Communication S
 
 "While good UI design is important for any software development effort, it’s even more important when designing for individuals on the autism spectrum."
 
-It is in our best interest to be mindful when we are making this app. UI design will be extremely important in this case. One study noted that ease of personalization was determinated to be a key factor in developing successful applications for people on the spectrum.
-
-### Link to study:
-https://file.scirp.org/pdf/JSEA_2014022510055814.pdf
+It is in our best interest to be mindful when we are making this app. UI design will be extremely important in this case due to children having sensory difficulties. One study noted that ease of personalization was determinated to be a key factor in developing successful applications for people on the spectrum.
