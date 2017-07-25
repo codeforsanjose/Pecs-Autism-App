@@ -7,7 +7,7 @@ Children on the Autism spectrum currently use a Picture Exchange Communication S
 
 ### Example of PECS
 
-![](/example_pecs.jpg)
+![Example of Pecs](images/example_pecs.jpg)
 
 ## User Interface
 
