@@ -1,20 +1,50 @@
-# Autism-App
-A visual app to help children with autism communicate easier. 
+# KidsCraft App
 
-## Backstory
+An app that help kids with Autism communicate easier. Inspired by the PECs system used by 
 
-Children on the Autism spectrum currently use a Picture Exchange Communication System (PECS) to communicate their needs to an adult. This requires the children to tediously go through a file of pictures just to communicate one action. As you can imagine, the addition of all those times a child has to flip through a file of pictures can be exhausting and time consuming. Our mission is to make this easier for them. We want to optimize this process to make it simple for the children to communicate to an adult. Optimizing this process will not only allow the children and adults to save time, but it will allow the children to have a lower cognitive load.
+## Getting Started
 
-### Example of PECS
+Make sure you have the latest version of Node.js installed. If you don't have it, or are an older version, you can visit Nodejs.org and download the installer.
 
-![Example of Pecs](images/example_pecs.jpg)
 
-## User Interface
+### Installing
 
-"While good UI design is important for any software development effort, it’s even more important when designing for individuals on the autism spectrum."
+A step by step series of examples that tell you have to get a development environment running
 
-It is in our best interest to be mindful when we are making this app. UI design will be extremely important due to sensory difficulties and processing diffilcultes that is common in these individuals. One study noted that ease of personalization was determinated to be a key factor in developing successful applications for people on the spectrum.
+Intital Install:
 
-## Future Contributors
+```
+npm install
+```
 
-Feel free to contribute to this project. Thank you in advance to everyone who takes time out of their day to help out with this project. You are making a huge difference in the lives of children with ASD.
+Running the program locally:
+```
+npm start
+```
+
+## Built With
+
+* [React](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [OpenEmojii](https://maven.apache.org/) - Used to generate card images
+* [FontAwesome](fontawesome.io) - For UI icons
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://github.com/thomasnguyen/development/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Authors
+
+* **Thomas Nguyen** - *Initial work* - [Thomas Nguyen](https://github.com/thomasnguyen)
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Big shout out to ShayC's App
+* CodeForSanJose - For hosting and collaboration 
+
+
