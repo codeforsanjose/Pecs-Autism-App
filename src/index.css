@@ -1,5 +1,13 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+/* =============================== GLOBAL =============================== */
+
+*{
+	margin:0px;
+	font-family: 'Lato', sans-serif;
 }
+
+body{
+	background:#2F3655;
+	background:url("images/background.png");
+}
+
+
