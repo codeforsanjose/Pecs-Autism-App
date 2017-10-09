@@ -112,6 +112,7 @@ class FullScreenDialog extends Component {
 
                 {
                     "title": "Add Item",
+                    "action": this.addItem,
                     "icon": "fa-plus"
                 }
             ];
