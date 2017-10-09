@@ -3,6 +3,7 @@ import DialogHeader from './DialogHeader';
 import Hero from './Hero';
 import DialogItem from './DialogItem';
 import Card from './Card';
+import Modal from './Modal';
 
 
 
@@ -146,7 +147,7 @@ class FullScreenDialog extends Component {
 
                     let photos;
         if (this.state.addItem_prompt){
-            addItem_modal = <div> Ayyy LMAO! </div>;
+            addItem_modal = <Modal>sfs</Modal>;
         }
         if (!this.state.showWindow) {}
 		else{
