@@ -16,6 +16,7 @@ class FullScreenDialog extends Component {
             showWindow: false,
             settings_window: "",
             window_type: "settings",
+            addItem_prompt:false,
         }
         this.categoryClick = this.categoryClick.bind(this);
         this.exitSettings = this.exitSettings.bind(this);
@@ -24,7 +25,13 @@ class FullScreenDialog extends Component {
         this.cardClick = this.cardClick.bind(this);
         this.removeFromDeleteBox = this.removeFromDeleteBox.bind(this);
         this.deleteItems = this.deleteItems.bind(this);
+        this.addItemPrompt = this.addItemPrompt.bind(this);
     };
+
+    addItemPrompt(){
+        this.setState({addItem_prompt:true});
+        console.log(this.state.addItem_prompt);
+    }
 
     exitSettings() {
         this.props.clickHandle();
@@ -89,6 +96,8 @@ class FullScreenDialog extends Component {
         this.props.deleteCards(this.deleteBox, this.state.settings_window);
     }
     render() {
+            let addItem_modal;
+
             let settingsItems = [{
                 "title": "Edit Profile",
                 "icon": "fa-pencil-square-o"
@@ -112,7 +121,7 @@ class FullScreenDialog extends Component {
 
                 {
                     "title": "Add Item",
-                    "action": this.addItem,
+                    "action": this.addItemPrompt,
                     "icon": "fa-plus"
                 }
             ];
@@ -136,7 +145,10 @@ class FullScreenDialog extends Component {
 
 
                     let photos;
-                    if (!this.state.showWindow) {}
+        if (this.state.addItem_prompt){
+            addItem_modal = <div> Ayyy LMAO! </div>;
+        }
+        if (!this.state.showWindow) {}
 		else{
 			let container = document.getElementById('DialogItem_container');
 			container.style.display="none";
@@ -156,6 +168,7 @@ class FullScreenDialog extends Component {
 		}
 		return(
 			<div id = "fsd" className="fullScreenDialog">
+                {addItem_modal}
 				<DialogHeader clickHandle={this.exitSettings} title="Settings"/>
 				<Hero 
 					settingsItems = {settingsItems}
