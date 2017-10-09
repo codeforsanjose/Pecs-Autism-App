@@ -147,7 +147,7 @@ class FullScreenDialog extends Component {
 
                     let photos;
         if (this.state.addItem_prompt){
-            addItem_modal = <Modal>sfs</Modal>;
+            addItem_modal = <Modal title="Add New Card">sfs</Modal>;
         }
         if (!this.state.showWindow) {}
 		else{
