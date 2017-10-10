@@ -34,9 +34,8 @@ class FullScreenDialog extends Component {
         this.setState({addItem_prompt:true});
     }
 
-    addItems(card){
-        console.log("ayyy" + card);
-        this.props.addItems(card,this.state.settings_window);
+    addItems(card,image){
+        this.props.addItems(card,this.state.settings_window,image);
     }
 
     close_addItemPrompt(){
@@ -106,7 +105,7 @@ class FullScreenDialog extends Component {
     render() {
             let addItem_modal = 
             <Modal 
-            addItems={(card) => this.addItems(card)}
+            addItems={(card,image) => this.addItems(card,image)}
             title="Add New Card" 
             closeModal={this.close_addItemPrompt}
             active={this.state.addItem_prompt}></Modal>;

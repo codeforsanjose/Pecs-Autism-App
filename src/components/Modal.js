@@ -20,7 +20,7 @@ class Modal extends Component{
     }
     
     save(){
-        this.props.addItems(this.refs.name.value);
+        this.props.addItems(this.refs.name.value,this.refs.image.value);
         this.closeModal();
     }
 
@@ -53,7 +53,12 @@ class Modal extends Component{
                     </div>
                 </div>
 
-
+                <div className="field">
+                    <label className="label">Image URL</label>
+                    <div className="control">
+                        <input className="input" ref="image" type="text" placeholder="Ex: 'playground'" />
+                    </div>
+                </div>
               </section>
               <footer className="modal-card-foot">
                 <button className="button is-success" onClick={this.save}>Save changes</button>
