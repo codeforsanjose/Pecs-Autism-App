@@ -117,10 +117,29 @@ class Main extends Component {
             }
         }
     }
+    addCard(card,category){
+        console.log(card);
+        console.log(category);
+
+        let cardList = this.state.cards;
+        console.log(cardList);
+        this.setState({cardList:cardList.push(
+            {
+                "title": card,
+                "img": "images/svg_icons/scooter.svg",
+                "type": "regular",
+                "categories": [category]
+            }
+        )});
+    }
     render() {
 		return(
 			<div id="main">
-				<Header categories={this.state.categoryList} deleteCards={(cardList,category) => this.deleteCards(cardList,category)} cards={this.getCards} inSideNavChange={this.props.onSideNavChange} />
+				<Header categories={this.state.categoryList} 
+                addCard={(card,category) => this.addCard(card,category)} 
+                deleteCards={(cardList,category) => this.deleteCards(cardList,category)} 
+                cards={this.getCards} 
+                inSideNavChange={this.props.onSideNavChange} />
 				<Stage />
 				<WorkStation />
 			</div>

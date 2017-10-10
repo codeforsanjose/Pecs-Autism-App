@@ -27,13 +27,21 @@ class FullScreenDialog extends Component {
         this.removeFromDeleteBox = this.removeFromDeleteBox.bind(this);
         this.deleteItems = this.deleteItems.bind(this);
         this.addItemPrompt = this.addItemPrompt.bind(this);
+        this.close_addItemPrompt = this.close_addItemPrompt.bind(this);
     };
 
     addItemPrompt(){
         this.setState({addItem_prompt:true});
-        console.log(this.state.addItem_prompt);
     }
 
+    addItems(card){
+        console.log("ayyy" + card);
+        this.props.addItems(card,this.state.settings_window);
+    }
+
+    close_addItemPrompt(){
+        this.setState({addItem_prompt:false});
+    }
     exitSettings() {
         this.props.clickHandle();
         this.setState({
@@ -63,11 +71,9 @@ class FullScreenDialog extends Component {
         } else {
             this.addToDeleteBox(cardTitle);
         }
-        console.log(this.deleteBox);
     }
 
     removeFromDeleteBox(cardTitle) {
-        console.log("HOLLY");
         this.setState({
             seletedBox: this.state.selectedBox.splice(this.state.selectedBox.indexOf(cardTitle), 1)
         });
@@ -96,8 +102,14 @@ class FullScreenDialog extends Component {
     deleteItems() {
         this.props.deleteCards(this.deleteBox, this.state.settings_window);
     }
+
     render() {
-            let addItem_modal;
+            let addItem_modal = 
+            <Modal 
+            addItems={(card) => this.addItems(card)}
+            title="Add New Card" 
+            closeModal={this.close_addItemPrompt}
+            active={this.state.addItem_prompt}></Modal>;
 
             let settingsItems = [{
                 "title": "Edit Profile",
@@ -146,9 +158,6 @@ class FullScreenDialog extends Component {
 
 
                     let photos;
-        if (this.state.addItem_prompt){
-            addItem_modal = <Modal title="Add New Card">sfs</Modal>;
-        }
         if (!this.state.showWindow) {}
 		else{
 			let container = document.getElementById('DialogItem_container');
