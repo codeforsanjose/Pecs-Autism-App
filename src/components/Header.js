@@ -30,7 +30,11 @@ class Header extends Component{
 		return (
 			<div className="Header">
 			
-				<FullScreenDialog categories={this.props.categories} deleteCards={this.props.deleteCards} cards={this.props.cards} clickHandle={this.settingsShow}/>
+				<FullScreenDialog categories={this.props.categories} 
+					deleteCards={this.props.deleteCards}
+					addItems={this.props.addCard}
+					cards={this.props.cards} 
+				 	clickHandle={this.settingsShow}/>
 
 				<div className="container">
 					<div className = "user_icons">
